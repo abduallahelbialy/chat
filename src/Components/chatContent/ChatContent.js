@@ -8,20 +8,20 @@ import ChatItem from "./ChatItem";
 export default class ChatContent extends Component {
   messagesEndRef = createRef(null);
   chatItms = [
-    {
-      key: 1,
-      image:
-        "https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/372908317_3572568199677398_3905450982413680686_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=bd92f5&_nc_ohc=AGptUpOe05cAX9QoYv_&_nc_ht=scontent-hbe1-2.xx&oh=00_AfDtbepw2YRqlHCXcOugejM1mq6HCQ5Cb7kLsApr32vDrw&oe=6585B84A",
-      type: "",
-      msg: "السلام عليكم اخبارك اى ؟",
-    },
-    {
-      key: 2,
-      image:
-        "https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/306654934_2210820469099482_3047836179128221661_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=KsBz_1BTiQEAX_E2uHs&_nc_ht=scontent-hbe1-2.xx&oh=00_AfB-NBfCk_TB1GxyIqQQqsJfMyzgKgsOH34U8gBRIVEr8w&oe=65865C9A",
-      type: "other",
-      msg: "الحمدلله بخير",
-    },
+    // {
+    //   key: 1,
+    //   image:
+    //     "https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/372908317_3572568199677398_3905450982413680686_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=bd92f5&_nc_ohc=AGptUpOe05cAX9QoYv_&_nc_ht=scontent-hbe1-2.xx&oh=00_AfDtbepw2YRqlHCXcOugejM1mq6HCQ5Cb7kLsApr32vDrw&oe=6585B84A",
+    //   type: "",
+    //   msg: "السلام عليكم اخبارك اى ؟",
+    // },
+    // {
+    //   key: 2,
+    //   image:
+    //     "https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/306654934_2210820469099482_3047836179128221661_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=KsBz_1BTiQEAX_E2uHs&_nc_ht=scontent-hbe1-2.xx&oh=00_AfB-NBfCk_TB1GxyIqQQqsJfMyzgKgsOH34U8gBRIVEr8w&oe=65865C9A",
+    //   type: "other",
+    //   msg: "الحمدلله بخير",
+    // },
     {
       key: 3,
       image:
