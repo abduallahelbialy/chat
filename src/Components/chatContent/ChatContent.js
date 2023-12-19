@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import React, { Component, useState, createRef, useEffect } from "react";
-
 import "./chatContent.css";
 import Avatar from "../chatList/Avatar";
 import ChatItem from "./ChatItem";
@@ -94,6 +93,7 @@ export default class ChatContent extends Component {
     this.setState({ msg: e.target.value });
   };
 
+
   render() {
     return (
       <div className="main__chatcontent">
@@ -132,12 +132,16 @@ export default class ChatContent extends Component {
             <div ref={this.messagesEndRef} />
           </div>
         </div>
+
         <div className="content__footer">
           <div className="sendNewMessage">
             <button className="addFiles">
               <i className="fa fa-plus"></i>
             </button>
+           
+
             <input
+              id="myInput"
               type="text"
               placeholder="Type a message here"
               onChange={this.onStateChange}
