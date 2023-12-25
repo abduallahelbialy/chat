@@ -56,6 +56,25 @@ export default class ChatContent extends Component {
       type: "other",
       msg: "خلاص انا جاى ",
     },
+
+    {
+      key: 8,
+      image:
+        "https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/306654934_2210820469099482_3047836179128221661_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=KsBz_1BTiQEAX_E2uHs&_nc_ht=scontent-hbe1-2.xx&oh=00_AfB-NBfCk_TB1GxyIqQQqsJfMyzgKgsOH34U8gBRIVEr8w&oe=65865C9A",
+      type: "other",
+      msg: "صورتي",
+      fileImage:
+        "https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/306654934_2210820469099482_3047836179128221661_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=KsBz_1BTiQEAX_E2uHs&_nc_ht=scontent-hbe1-2.xx&oh=00_AfB-NBfCk_TB1GxyIqQQqsJfMyzgKgsOH34U8gBRIVEr8w&oe=65865C9A",
+    },
+
+    {
+      key: 9,
+      image:
+        "https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/306654934_2210820469099482_3047836179128221661_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=KsBz_1BTiQEAX_E2uHs&_nc_ht=scontent-hbe1-2.xx&oh=00_AfB-NBfCk_TB1GxyIqQQqsJfMyzgKgsOH34U8gBRIVEr8w&oe=65865C9A",
+      type: "",
+      msg: "الفيديو بتاعي",
+      fileVideo: "https://www.youtube.com/embed/7qMraVPtL_o",
+    },
   ];
 
   constructor(props) {
@@ -93,7 +112,6 @@ export default class ChatContent extends Component {
     this.setState({ msg: e.target.value });
   };
 
-
   render() {
     return (
       <div className="main__chatcontent">
@@ -126,6 +144,8 @@ export default class ChatContent extends Component {
                   user={itm.type ? itm.type : "me"}
                   msg={itm.msg}
                   image={itm.image}
+                  fileImage={itm.fileImage}
+                  fileVideo={itm.fileVideo}
                 />
               );
             })}
@@ -138,7 +158,6 @@ export default class ChatContent extends Component {
             <button className="addFiles">
               <i className="fa fa-plus"></i>
             </button>
-           
 
             <input
               id="myInput"
