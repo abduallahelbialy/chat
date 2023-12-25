@@ -155,9 +155,6 @@ export default class ChatContent extends Component {
 
         <div className="content__footer">
           <div className="sendNewMessage">
-            <button className="addFiles">
-              <i className="fa fa-plus"></i>
-            </button>
 
             <input
               id="myInput"
